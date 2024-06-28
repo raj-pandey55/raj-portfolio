@@ -13,7 +13,7 @@ function Navbar() {
           transition={{ duration: 0.5 }}
           className="navbar-name"
         >
-          RP
+          RAJ
         </motion.span>
         <div className="social">
           <a href="https://www.instagram.com/rajpandey._/" target="_blank">
