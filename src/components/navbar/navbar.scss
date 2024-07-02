@@ -1,20 +1,29 @@
+@import "../../app.scss";
+
 .navbar {
   height: 100px;
-  
 
   .wrapper {
-    width: 1024px;
+    max-width: 1024px;
     margin: 0 12rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    
+
+    @include mobile {
+      justify-content: flex-start;
+      padding: 40px ;
+    }
   }
 
   .navbar-name {
     font-family: "Arimo", sans-serif;
     font-weight: 700;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   .social {

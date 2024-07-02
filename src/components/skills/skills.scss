@@ -1,3 +1,5 @@
+@import '../../app.scss';
+
 .skills {
   padding-top: 25px;
   display: flex;
@@ -12,6 +14,13 @@
     font-size: 60px;
     line-height: 40px;
     letter-spacing: 6px;
+
+    @include mobile {
+      transform: none !important;
+      font-size: 30px;
+      margin-top: 10px;
+      margin-bottom: 40px;
+    }
   }
 
   .skills-container {
@@ -22,6 +31,13 @@
     gap: 16px;
     margin: 15px 0;
 
+    @include mobile {
+      margin: 10px 10px;
+    }
+
+    
+
+    
     .icons {
       border-radius: 16px;
       border-width: 4px;
@@ -32,6 +48,12 @@
       .icon {
         font-size: 72px;
         line-height: 1;
+
+        @include mobile {
+          font-size: 54px;
+          
+        }
+    
       }
     }
   }
